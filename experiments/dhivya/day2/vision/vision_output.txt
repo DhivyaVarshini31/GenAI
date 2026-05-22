@@ -1,0 +1,101 @@
+Prompt 1: Describe what you see in this image.
+The image displays a detailed "API Flowchart," which visually outlines the process an API request undergoes from its endpoint, through authorization and caching, to either a successful response or various error states. The flowchart uses different shapes and colors to categorize steps and outcomes.
+
+Here's a breakdown of what I see:
+
+**Overall Structure:**
+The flowchart begins at the top with a central starting point and branches out based on decisions, leading to different outcomes at the bottom. It's clearly laid out with arrows indicating the flow. The "boardmix" logo is visible at the bottom of the image, indicating the tool used to create the flowchart.
+
+**Starting Point:**
+*   **"API endpoint"** (blue rounded rectangle) marks the beginning of the API request process.
+
+**First Major Decision (Authorization):**
+*   From the "API endpoint," the flow goes to **"Authorize d?"** (blue diamond). This is the initial authorization check.
+
+**Successful Path (YES - Authorized):**
+If the request is authorized (following the "YES" path from the first "Authorize d?"), it proceeds through caching logic, predominantly represented by green shapes:
+1.  It goes to another **"Authorize d?"** (blue diamond, perhaps a secondary or more detailed authorization check).
+2.  If "YES," it leads to **"Cached?"** (green diamond).
+    *   **If "YES" (Cached):**
+        *   It then checks **"Within freshness lifetime?"** (green diamond).
+            *   If "YES," the request directly leads to **"Return code 2xx"** (green rectangle).
+            *   If "NO," it checks **"Revalidate d with server?"** (green diamond).
+                *   If "YES," it leads to **"Return code 2xx."**
+                *   If "NO," it leads to **"Store in cache"** (green rectangle).
+    *   **If "NO" (Not Cached):** It leads directly to **"Store in cache"** (green rectangle).
+3.  From **"Store in cache,"** the flow continues to **"Return code 2xx"** (green rectangle).
+4.  Finally, the successful path ends with **"Request complete"** (green rounded rectangle).
+
+**Error Paths (NO - Not Authorized):**
+If the initial authorization fails (following the "NO" path from the first "Authorize d?"), the flowchart branches into four distinct error scenarios, each with a corresponding HTTP status code and a suggested remedy:
+
+1.  **Request Malformed:**
+    *   Condition: **"Request malformed"** (orange rectangle).
+    *   Result: **"Return code 400"** (orange rectangle).
+    *   Action: **"Remedy error and try"** (orange rounded rectangle).
+
+2.  **Invalid or Missing Query Parameter:**
+    *   Condition: **"Invalid or missing query parameter"** (yellow rectangle).
+    *   Result: **"Return code 422"** (yellow rectangle).
+    *   Action: **"Remedy error and try"** (merges with the 400 error action).
+
+3.  **Something's Wrong (Temporary):**
+    *   Condition: **"Something's wrong (temporary)"** (red rectangle).
+    *   Result: **"Return code 5xx"** (red rectangle).
+    *   Action: **"Try again or contact"** (red rounded rectangle).
+
+4.  **API Key Invalid or Rate Limit Reached:**
+    *   Condition: **"API key invalid or rate limit reached"** (orange rectangle).
+    *   Result: **"Return code 403"** (orange rectangle).
+    *   Action: **"Remedy error and try"** (orange rounded rectangle).
+
+**Color and Shape Key:**
+*   **Blue rounded rectangles:** Start and end points.
+*   **Blue diamonds:** Major authorization decisions.
+*   **Green diamonds:** Caching and freshness decisions.
+*   **Green rectangles:** Successful actions or states (like storing in cache, successful return code).
+*   **Orange/Yellow/Red rectangles:** Represent specific error conditions and their corresponding HTTP status codes (client-side 4xx errors are orange/yellow, server-side 5xx errors are red).
+*   **Orange/Red rounded rectangles:** Suggested remedial actions for errors.
+*   **Arrows with "YES"/"NO" labels:** Indicate the flow based on decision outcomes.
+
+In summary, the image provides a clear, logical diagram of an API's request handling, demonstrating how it processes requests through authorization and caching, and how it handles various types of errors by returning appropriate HTTP status codes and suggesting client actions.
+
+Prompt 2: Extract any text visible in this image.
+Here is all the text visible in the image:
+
+API Flowchart
+API endpoint
+Authorize d?
+YES
+NO
+YES
+Cached?
+NO
+Store in cache
+Within freshness lifetime?
+NO
+Revalidate d with server?
+YES
+YES
+NO
+Return code 2xx
+Request complete
+Request malformed
+Invaid or missing query parameter
+Something's wrong (temporary)
+API key invalid or rate limit reached
+Return code 400
+Return code 422
+Return code 5xx
+Return code 403
+Remedy error and try
+Try again or contact
+Remedy error and try
+boardmix
+
+Prompt 3: What are the 3 most important elements in this image?
+Based on the purpose and structure of the "API Flowchart," the 3 most important elements are:
+
+1.  **API Endpoint:** This is the absolute starting point of any API interaction, representing the initial request from a client. Without an endpoint, there's no process to flowchart.
+2.  **Authorization (Authorize? decision):** This is a critical gatekeeping step that determines whether a request is legitimate and allowed to proceed. It's fundamental to security and access control for almost any API.
+3.  **API Response Codes (2xx, 4xx, 5xx) and their Outcomes:** These represent the final result of the API request, whether it's a success (2xx) or various types of errors (4xx for client errors, 5xx for server errors). These codes and their associated outcomes (e.g., "Request complete," "Remedy error and try") are what the API communicates back to the client, defining the success or failure of the operation.
