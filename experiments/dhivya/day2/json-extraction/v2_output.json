@@ -1,0 +1,60 @@
+{
+  "title": "NCB Seizes Ganja in Multi-State Operation, Disrupts Supply Chain",
+  "author": "Unknown",
+  "publication_date": "Unknown",
+  "key_facts": [
+    "NCB Chennai Zonal Unit, in coordination with Telangana Police, intercepted a container truck on May 12 near Chennai.",
+    "Contraband ganja was found concealed within a false ceiling and hidden cavities of the seized vehicle.",
+    "The ganja was being transported from Malkangiri district in Odisha and was allegedly headed for Madurai in Tamil Nadu.",
+    "Individuals arrested in connection with the seizure are natives of Odisha and Bihar.",
+    "The operation successfully disrupted a major drug supply chain operating between Odisha-Andhra Pradesh and Tamil Nadu.",
+    "Efforts are under way to apprehend the alleged mastermind and owner of the seized vehicle, traced to Odisha.",
+    "Further investigation is in progress to identify other syndicate members and trace financial transactions."
+  ],
+  "named_entities": [
+    {
+      "name": "NCB",
+      "type": "ORG"
+    },
+    {
+      "name": "Chennai Zonal Unit",
+      "type": "ORG"
+    },
+    {
+      "name": "Telangana Police",
+      "type": "ORG"
+    },
+    {
+      "name": "Nallur toll plaza",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Chennai",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Odisha",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Bihar",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Malkangiri district",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Madurai",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Tamil Nadu",
+      "type": "LOCATION"
+    },
+    {
+      "name": "Andhra Pradesh",
+      "type": "LOCATION"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Summarize this in one sentence. Be punchy and use active voice.
+
+{text}

@@ -1,0 +1,60 @@
+{
+  "title": "Multi-state drug bust: Ganja seized from container truck near Chennai",
+  "author": "Unknown",
+  "publication_date": "Unknown",
+  "key_facts": [
+    "Officers of the NCB Chennai Zonal Unit, in coordination with the Telangana Police, carried out a multi-state operation on May 12.",
+    "A container truck was intercepted at the Nallur toll plaza near Chennai.",
+    "Contraband ganja was discovered concealed inside a specially designed false ceiling and hidden cavities in the vehicle.",
+    "The seized ganja was being transported from Malkangiri district in Odisha, allegedly headed for Madurai in Tamil Nadu.",
+    "The arrested persons are natives of Odisha and Bihar.",
+    "The seizure disrupted a major supply chain operating between Odisha-Andhra Pradesh and Tamil Nadu.",
+    "Efforts are still underway to apprehend the alleged mastermind of the network and owner of the seized vehicle, who has been traced to Odisha."
+  ],
+  "named_entities": [
+    {
+      "name": "NCB",
+      "type": "Organization"
+    },
+    {
+      "name": "Chennai Zonal Unit",
+      "type": "Organization"
+    },
+    {
+      "name": "Telangana Police",
+      "type": "Organization"
+    },
+    {
+      "name": "Chennai",
+      "type": "Location"
+    },
+    {
+      "name": "Nallur toll plaza",
+      "type": "Location"
+    },
+    {
+      "name": "Odisha",
+      "type": "Location"
+    },
+    {
+      "name": "Bihar",
+      "type": "Location"
+    },
+    {
+      "name": "Malkangiri district",
+      "type": "Location"
+    },
+    {
+      "name": "Madurai",
+      "type": "Location"
+    },
+    {
+      "name": "Tamil Nadu",
+      "type": "Location"
+    },
+    {
+      "name": "Andhra Pradesh",
+      "type": "Location"
+    }
+  ]
+}
